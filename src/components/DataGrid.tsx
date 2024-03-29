@@ -54,7 +54,7 @@ const DataGrid = ({ data }: DataGridProps) => {
                     </CardHeader>
 
                     <CardContent>
-                      <div className="relative overflow-hidden h-[300px] aspect-square">
+                      <div className="relative overflow-hidden h-[300px] aspect-square mx-auto">
                         <Image fill alt="photo" src={item.image} />
                       </div>
                       <CardDescription className="text-center pt-4">
