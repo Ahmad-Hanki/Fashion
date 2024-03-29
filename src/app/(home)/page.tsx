@@ -3,6 +3,7 @@ import { Items } from "@/data/Data";
 import DataGrid from "@/components/DataGrid";
 import DeliveryOptions from "@/components/DeliveryOptions";
 import Options from "@/components/Options";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   
@@ -12,6 +13,7 @@ export default function Home() {
       <DataGrid data = {Items}/>
       <DeliveryOptions/>
       <Options/>
+      <Contact />
     </section>
   );
 }
