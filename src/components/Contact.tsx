@@ -33,7 +33,7 @@ const Contact = () => {
         <h1 className="text-5xl font-extrabold text-center mb-9">Contact</h1>
         <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] text-center gap-9">
           {contact.map((item) => (
-            <Card key={item.title} className="flex flex-col items-center gap-4 p-8">
+            <Card key={item.title} className="flex flex-col items-center gap-4 p-8 bg-secondary">
               <div className="relative h-32 aspect-square overflow-hidden">
                 <Image
                   src={item.image}
