@@ -23,11 +23,11 @@ const DropdownPhone = () => {
   return (
     <div className="md:hidden">
       <DropdownMenu>
-        <DropdownMenuTrigger>
-          <Menu size={20} />
+        <DropdownMenuTrigger className="text-center">
+          <Menu size={30} />
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="h-[70vh] w-[300px] flex justify-center mt-20">
-          <DropdownMenuLabel>Our Collections</DropdownMenuLabel>
+        <DropdownMenuContent className="h-[50vh] w-[300px] flex items-center mt-20 flex-col justify-start bg-primary-foreground rounded-xl">
+          <DropdownMenuLabel className="p-12">Our Collections</DropdownMenuLabel>
           <DropdownMenuSeparator />
           {linkList.map((link) => (
             <DropdownMenuItem>

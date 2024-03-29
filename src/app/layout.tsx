@@ -25,7 +25,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
         <Navbar/>
-        <main>{children}</main>
+        <main className="bg-secondary">{children}</main>
         </ThemeProvider>
       </body>
     </html>

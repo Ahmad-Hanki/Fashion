@@ -29,7 +29,7 @@ const Navbar = () => {
               <div className="hidden md:block">
                 <ModeToggle />
               </div>
-              <DropdownPhone />
+    
               <Link href={"/"}>
                 <BsInstagram size={30} />
               </Link>
@@ -41,6 +41,7 @@ const Navbar = () => {
                 {" "}
                 <BsTelegram size={30} />
               </Link>
+              <DropdownPhone />
             </div>
           </div>
         </Container>
