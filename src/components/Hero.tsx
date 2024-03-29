@@ -1,6 +1,6 @@
+
 import Hero from '@/assets/hero.jpg'
 import Image from 'next/image'
-
 const HeroComponent = () => {
   return (
     <div className="w-full">

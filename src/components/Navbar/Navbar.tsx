@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import Container from "../Container";
 import logo from "@/assets/logo.png";
@@ -8,10 +10,16 @@ import Links from "./Links";
 import { ModeToggle } from "../ui/modeToggle";
 import { BsInstagram, BsTelegram, BsWhatsapp } from "react-icons/bs";
 import DropdownPhone from "./DropdownPhone";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
+
 const Navbar = () => {
+  const path = usePathname();
+  const home = path === '/';
+  console.log(home)
   return (
     <>
-      <div className="w-full bg-primary/60 md:absolute md:left-0 md:top-0 z-10">
+      <div className={cn('w-full bg-primary/60 md:absolute md:left-0 md:top-0 z-10', home? '' : 'static md:static')}>
         <Container>
           <div className="flex justify-between items-center px-5">
             <Link href={"/"}>

@@ -4,6 +4,7 @@ import DataGrid from "@/components/DataGrid";
 import DeliveryOptions from "@/components/DeliveryOptions";
 import Options from "@/components/Options";
 import Contact from "@/components/Contact";
+import { Footer } from "@/components/footer/Footer";
 
 export default function Home() {
   
@@ -14,6 +15,8 @@ export default function Home() {
       <DeliveryOptions/>
       <Options/>
       <Contact />
+      <Footer />
+
     </section>
   );
 }
