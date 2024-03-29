@@ -24,7 +24,10 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-        <Navbar/>
+            <div className="sticky top-0 left-0 z-30">
+               <Navbar/>
+            </div>
+       
         <main className="bg-secondary">{children}</main>
         </ThemeProvider>
       </body>
