@@ -7,7 +7,7 @@ import SingleItem from "@/components/SingleItem";
 import { Items } from "@/data/Data"
 import { notFound } from "next/navigation";
 
-const SingleCoatPage = ({params:{id}}:SingleCoatPageProps) => {
+const SingleShirtPage = ({params:{id}}:SingleCoatPageProps) => {
     const data = Items.find(item => id === item.id);
     if (!data) notFound();
   return (
@@ -17,4 +17,4 @@ const SingleCoatPage = ({params:{id}}:SingleCoatPageProps) => {
   )
 }
 
-export default SingleCoatPage
+export default SingleShirtPage
