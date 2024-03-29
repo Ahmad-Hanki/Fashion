@@ -19,7 +19,7 @@ const Navbar = () => {
   console.log(home)
   return (
     <>
-      <div className={cn('w-full bg-primary/60 md:absolute md:left-0 md:top-0 z-10', home? '' : 'static md:static')}>
+      <div className={cn('w-full bg-primary/75 md:absolute md:left-0 md:top-0 z-10 text-primary-foreground', home? '' : 'static md:static')}>
         <Container>
           <div className="flex justify-between items-center px-5">
             <Link href={"/"}>
