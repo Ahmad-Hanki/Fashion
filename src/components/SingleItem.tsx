@@ -19,7 +19,7 @@ const SingleItem = ({ item }: SingleItemProps) => {
       <Container>
         <Card className="rounded-lg w-full justify-center flex flex-col mx-auto md:flex-row items-center p-7">
           <CardContent>
-            <div className="w-[400px] overflow-hidden relative aspect-square">
+            <div className="w-[300px]  md:w-[400px] overflow-hidden relative aspect-square ">
               <Image
                 alt="photo"
                 fill
