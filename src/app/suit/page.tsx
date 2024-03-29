@@ -2,13 +2,13 @@ import React from "react";
 import { Items } from "@/data/Data";
 import { ItemType } from "@/data/Data";
 import DataGrid from "@/components/DataGrid";
-const DressPage = () => {
-  const data: ItemType[] = Items.filter((item) => item.category === "dress");
+const SuitPage = () => {
+    const data: ItemType[] = Items.filter(item => item.category === 'suit');
   return (
     <div className="p-6">
-      <DataGrid data={data} />
+        <DataGrid data={data}/>
     </div>
   );
 };
 
-export default DressPage;
+export default SuitPage;
